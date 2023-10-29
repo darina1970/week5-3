@@ -1,0 +1,65 @@
+/*Заголовок*/
+.header_container {
+    /*Блочная модель*/
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 100vw;
+    min-height: 20vh; 
+    /*Типографика*/   
+    color: white;
+    /*Оформление*/
+    background-image: url("assets/background.jpg");
+}
+
+/*Ссылки*/
+a,
+a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+/*Меню*/
+.list {
+    /*Блочная модель*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100vw;
+    /*Типографика*/
+    font-size: large;
+    /*Оформление*/
+    list-style-type: none;
+    
+}
+
+/*Основной блок*/
+.main_container {
+    display: flex;
+    width: 100vw;
+    min-height: 80vh;    
+    flex-flow: column;
+    align-items: flex-start;
+}
+
+/*Всё по картинкам*/
+.img__container {
+    display: flex;
+    width: 100vw;
+    min-height: 70vh;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.image {
+    width: 20em;
+    height: 30em;
+}
+
+/*Анимация*/
+/*Увеличиваем масштаб картинок*/
+.image:hover {
+    transform: scale(1.2); 
+}
+
+
